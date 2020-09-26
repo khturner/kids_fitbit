@@ -60,7 +60,7 @@ alldata <- alldata %>%
 
 toplot <- alldata %>%
   # Restrict age range
-  filter(start_week < 9) %>%
+  filter(start_week < 13) %>%
   # No naps to make the block viz cleaner - start time after 5pm, end time before 8am
   filter(hour(start_time) > 5, hour(end_time) < 20)
 
